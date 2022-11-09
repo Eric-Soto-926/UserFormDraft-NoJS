@@ -1,0 +1,72 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.userform{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-radius: .5rem;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    min-width: 200px;
+    max-width: 500px;
+}
+
+.userform > *{
+    width: 90%;
+}
+
+.inputtext{
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid #DFDEDA;
+    transition: border-bottom .8s;
+    padding-top: .5rem;
+}
+
+.inputtext:focus{
+    border-bottom: 1.5px solid teal;
+}
+
+.inputduo{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+.submit-container{
+    display:flex;
+    justify-content: center;
+}
+button{
+    
+    font-size: 1rem;
+    background:#6aeeb5;
+    border: none;
+    outline:none;
+    border-radius: .2rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: background-color .7s ease-in, padding-left .7s ease-in, padding-right .7s ease-in, outline .7s ease-in;
+  }
+  
+  button:hover, button:focus{
+    background-color: #29e6a7;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  button:focus, button:active{
+      outline: .3px solid black;
+  }
+  
